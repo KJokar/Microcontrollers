@@ -1,0 +1,21 @@
+#include <mega32a.h>
+#include <delay.h>
+
+void main(void)
+{
+DDRB = 0x07;
+
+
+while (1)
+      { 
+        PORTB = 0x07;
+        delay_ms(1000);
+        PORTB = 0x03;
+        delay_ms(1000);
+        PORTB = 0x01;
+        delay_ms(1000);
+        PORTB = 0x00;
+        delay_ms(1000);
+        
+      }
+}
